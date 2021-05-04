@@ -15,7 +15,7 @@ RUN	apt install -y vim python3 python3-dev python3-pip libssl-dev libffi-dev gdb
 #RUN     python3 -m pip install --upgrade pip
 #UN     python3 -m pip install --upgrade setuptools
 #UN     python3 -m pip install --upgrade git+https://github.com/Gallopsled/pwntools.git@dev3
-RUN apt install python python-pip zsh  -y
+RUN apt install python python-pip zsh cmake time  -y
 RUN pip3 install unicorn
 RUN pip3 install keystone-engine 
 RUN pip3 install
@@ -44,8 +44,9 @@ RUN	echo "source ~/peda-heap/peda.py" >> ~/.gdbinit
 RUN     gem install pwntools
 
 #one gadget
-RUN apt-get install ruby -y
-RUN gem install one_gadget -v 1.7.3
+#RUN apt-get install ruby -y
+#RUN gem install one_gadget -v 1.7.3
 
 # one-gadget
-#     gem install one_gadget
+RUN gem install one_gadget
+

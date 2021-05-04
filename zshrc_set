@@ -1,4 +1,4 @@
 alias git1='git add *'
 alias git2='git commit -m'
-alias git3='git push origin master''
+alias git3='git push origin master'
 

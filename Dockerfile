@@ -41,11 +41,10 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosu
 RUN echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 RUN echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=111'" >> ~/.zshrc
 
-RUN cat "~/set/vimrc_set" >> ~/.vimrc
-RUN cat "~/set/zshrc_set" >> ~/.zshrc
-RUN cat "~/set/gdbinit_set" >> ~/.gdbinit
+RUN cat ~/set/vimrc_set >> ~/.vimrc
+RUN cat ~/set/zshrc_set >> ~/.zshrc
+RUN cat ~/set/gdbinit_set >> ~/.gdbinit
 
 RUN apt-get install ruby -y
 RUN gem install one_gadget
-
 

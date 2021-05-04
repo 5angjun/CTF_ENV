@@ -1,0 +1,10 @@
+source ~/peda/peda.py
+source ~/peda-heap/peda.py
+source ~/tools/pwngdb.py
+source ~/tools/angelheap/gdbinit.py
+define hook-run
+python
+import angelheap
+angelheap.init_angelheap()
+end
+end

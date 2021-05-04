@@ -1,0 +1,4 @@
+alias git1='git add *'
+alias git2='git commit'
+alias git3='git push origin master''
+

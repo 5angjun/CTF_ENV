@@ -47,4 +47,3 @@ RUN cat ~/set/gdbinit_set >> ~/.gdbinit
 
 RUN apt-get install ruby -y
 RUN gem install one_gadget
-

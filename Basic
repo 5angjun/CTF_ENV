@@ -3,6 +3,8 @@
 dpkg --add-architecture i386
 apt -y update
 apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 ca-certificates patch pkg-config strace ltrace file upx-ucl
+apt-get install libc6-dbg
+apt-get install libc6-dbg:i386
 
 #for tmux debuging
 apt-get install tmux -y 

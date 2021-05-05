@@ -12,6 +12,7 @@ git clone https://github.com/Mipu94/peda-heap.git ~/peda-heap \ &&
 echo "source ~/peda-heap/peda.py" >> ~/.gdbinit
 
 mkdir ~/set
+git clone https://github.com/Psj0221/CTF_ENV.git ~/set
 git clone https://github.com/longld/peda.git ~/peda\ &&
 git clone git://github.com/Mipu94/peda-heap.git ~/peda-heap\ &&
 git clone https://github.com/scwuaptx/Pwngdb.git  ~/tools\ &&

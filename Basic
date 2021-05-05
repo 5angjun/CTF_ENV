@@ -9,16 +9,24 @@ apt-get install tmux -y
 
 # Install peda-heap && gdb plugin
 
-mkdir ~/set
+mkdir ./BasicSetting
 git clone https://github.com/Psj0221/hack-ctf.git
-git clone https://github.com/Psj0221/CTF_ENV.git ~/set
-git clone https://github.com/longld/peda.git ~/peda\ &&
-git clone git://github.com/Mipu94/peda-heap.git ~/peda-heap\ &&
-git clone https://github.com/scwuaptx/Pwngdb.git  ~/tools\ &&
-git clone https://github.com/Psj0221/CTF_ENV.git ~/set\ &&
-cat ~/set/vimrc_set >> ~/.vimrc\ &&
-cat ~/set/zshrc_set >> ~/.zshrc\ &&
-cat ~/set/gdbinit_set > ~/.gdbinit
+git clone https://github.com/Psj0221/CTF_ENV.git ./BasicSetting
+
+# vimrc && zsh 
+git clone https://github.com/Psj0221/CTF_ENV.git
+cat ./BasicSetting/vimrc_set >> ~/.vimrc
+cat ./BasicSetting/zshrc_set >> ~/.zshrc
+
+#peda && pwndbg
+git clone https://github.com/longld/peda.git ~/peda
+git clone git://github.com/Mipu94/peda-heap.git ~/peda-heap
+
+cd ~/
+git clone https://github.com/scwuaptx/Pwngdb.git
+cp ~/Pwngdb/.gdbinit ~/
+
+
 
 
 

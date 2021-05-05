@@ -1,8 +1,8 @@
 #32bit essential
 # Install essential tools for gdb-peda & pwntools
-dpkg --add-architecture i386 \ &&
+dpkg --add-architecture i386
 apt -y update \ &&
-apt install -y vim python3 python3-dev python3-pip libssl-dev libffi-dev gdb wget curl gcc make git libc6:i386 libncurses5:i386 libstdc++6:i386 ca-certificates patch pkg-config strace ltrace file upx-ucl netcat ruby-full 
+apt install -y libc6:i386 libncurses5:i386 libstdc++6:i386 ca-certificates patch pkg-config strace ltrace file upx-ucl
 
 #for tmux debuging
 apt-get install tmux -y 
